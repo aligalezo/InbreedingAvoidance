@@ -6,7 +6,7 @@ library(survival)
 library(survminer)
 
 ## Load natal dispersal dates.
-dispersals <- readRDS(file = "Data/Raw/dispersals.Rda")
+dispersals <- readRDS(file = "Data/Raw/dispersals.csv")
 
 ## Survival analysis.
 surv <- Surv(time = dispersals$dispersal_age,
